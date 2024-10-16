@@ -1,0 +1,164 @@
+
+.background-container{
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    width: 1600px;
+    height: 800px;
+    margin: 0 auto;
+    /*background-color: #BBE4A8;*/
+    background: linear-gradient(to bottom left, rgb(0, 0, 0), rgba(15, 2, 200));
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 0.2rem;
+    height: 100%;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 48%;
+    gap: 0.4rem 0.2rem;
+    border-radius: 2%;
+    overflow: hidden;
+    justify-content: space-around;
+    border: #fff solid 5px;
+
+}
+
+.img {
+    flex-basis: 49%;
+    /*height: 190px;*/
+    /*width:390px;*/
+    /*border: #fff solid 1px;*/
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+}
+
+.img::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(18, 18, 198, 0.36);
+}
+
+.img-1 {
+    background-image: url("../assets/background/chuttersnap-4JHMt29fvj8-unsplash.jpg");
+}
+
+.img-2 {
+    background-image: url("../assets/background/karsten-winegeart-c5lwhP9RMkA-unsplash.jpg");
+
+}
+.img-3 {
+    background-image: url("../assets/background/egor-litvinov-PxOKiijNQ5M-unsplash.jpg");
+}
+.img-4 {
+    background-image: url("../assets/background/elyas-pasban-anqECSim-pc-unsplash.jpg");
+}
+.img-5 {
+
+    background-image: url("../assets/background/david-gavi-HPVRnFeplbQ-unsplash.jpg");
+
+}
+.img-6 {
+    background-image: url("../assets/background/ilyuza-mingazova-40ZdNQ7I5Oo-unsplash.jpg");
+}
+.img-7 {
+    background-image: url("../assets/background/ilyuza-mingazova-LUOwdouWIh0-unsplash.jpg");
+}
+.img-8 {
+    background-image: url("../assets/background/karsten-winegeart-c5lwhP9RMkA-unsplash.jpg");
+}
+.img-9 {
+    background-image: url("../assets/background/martin-sanchez-sp28h4ugLts-unsplash.jpg");
+}
+.img-10 {
+    background-image: url("../assets/background/sobhan-joodi-QPNaz7qS16c-unsplash.jpg");
+}
+.img-11 {
+    background-image: url("../assets/background/david-gavi-HPVRnFeplbQ-unsplash.jpg");
+}
+.img-12 {
+    background-image: url("../assets/background/egor-litvinov-PxOKiijNQ5M-unsplash.jpg");
+}
+.img-12 {
+    background-image: url("../assets/background/ilyuza-mingazova-40ZdNQ7I5Oo-unsplash.jpg");
+}
+.img-13 {
+    background-image: url("../assets/background/egor-litvinov-PxOKiijNQ5M-unsplash.jpg");
+}
+.img-14 {
+    background-image: url("../assets/background/sobhan-joodi-QPNaz7qS16c-unsplash.jpg");
+}
+.img-15 {
+    background-image: url("../assets/background/chuttersnap-4JHMt29fvj8-unsplash.jpg");
+}
+.img-16 {
+    background-image: url("../assets/background/karsten-winegeart-c5lwhP9RMkA-unsplash.jpg");
+}
+
+
+.about {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+
+    width: 1600px;
+    justify-content: center;
+    border-radius: 2%;
+
+}
+
+.img-about-first {
+    overflow: hidden;
+    position: relative;
+    height: 612px;
+    flex-basis: 40%;
+    background-repeat: no-repeat;
+
+}
+
+.img-about-first img {
+    position: absolute;
+    top: 0;
+    left: -70%;
+
+}
+
+.button-about {
+    height: 612px;
+    line-height: 612px;
+    flex-basis: 40%;
+}
+
+.button-about > button {
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 3rem;
+    padding: 10px 0;
+    border: #BBE4A8 solid 1px;
+    border-radius: 5%;
+    color: #ff4c00;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, rgb(13, 28, 142), rgba(15, 2, 200))
+}
+
+
+.button-about a {
+    color: #ff4c00;
+    padding: 20px 35px;
+}
+
+.button-about > button a:hover {
+    color: #BBE4A8;
+    transform: rotate(-10deg);
+}

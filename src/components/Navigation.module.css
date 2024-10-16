@@ -1,0 +1,29 @@
+nav {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.navigation li {
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Inconsolata", monospace;
+    color: white;
+
+}
+
+.navigation li:last-child {
+    border-left: #ff4c00 solid 1px;
+    color: #ff4c00;
+}
+.navigation li span {
+    padding: 0 10px;
+}

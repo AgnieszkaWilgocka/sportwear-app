@@ -1,5 +1,7 @@
-export default function Products() {
+import ProductsList from "../components/ProductsList.jsx";
+
+export default function ProductsPage() {
     return(
-        <h1>Sportswear.com</h1>
+        <ProductsList />
     )
 }

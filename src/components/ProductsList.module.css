@@ -1,0 +1,79 @@
+.products-h1 {
+    color: #ff4c00;
+    font-size: 4rem;
+    font-family: "Londrina Sketch", sans-serif;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*min-height: 150vh;*/
+    /*background-color: saddlebrown;*/
+    gap: 1.5rem;
+}
+
+.product {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    background-color: #1324b1;
+    color: white;
+    flex-basis: 29%;
+    border-radius: 4.5%;
+    border-left: #ff4c00 1px solid;
+    /*height: 70vh;*/
+}
+
+.product p,
+.product h3 {
+    padding: 0 10px;
+}
+.product h3 {
+    color: #ff4c00;
+    font-size: 1.5rem;
+}
+.product img {
+     height: 20rem;
+     width: 100%;
+}
+
+ .actions {
+     display: flex;
+     flex-direction: row;
+     /*width: 100%;*/
+     padding: 20px;
+     justify-content: flex-end;
+     /*margin-right: 70px;*/
+ }
+
+ .actions button {
+     padding: 10px 40px;
+     background-color: #fff;
+     border-radius: 10%;
+     color: #ff4c00;
+     font-weight: bold;
+     font-size: 1.5rem;
+     font-family: "Londrina Sketch", sans-serif;
+     border-style: none;
+     letter-spacing: 2px;
+     /*border-bottom: white 1px solid;*/
+ }
+
+ .actions button:hover {
+     background: linear-gradient(90deg, #ff4c00, #ff8a05);
+     color: #fff;
+     font-weight: normal;
+ }
+
+ /*.buttons {*/
+ /*    padding: 20px;*/
+ /*}*/

@@ -3,22 +3,29 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
+import RootLayout from "./pages/RootLayout.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <RootLayout />,
     children: [
-        {
-          path: "/products",
-          element: <Products />
-    }
+      {
+        path: "",
+        element: <Home />
+      },
+      {
+        path: "/products",
+        element: <Products />
+      }
     ]
   },
+
 
 ]);
 
 function App() {
+
 
 
   return (

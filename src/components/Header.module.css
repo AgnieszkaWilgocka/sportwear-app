@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 400px;
+    border-right: white solid 5px;
+    border-left: white solid 5px;
+    border-top: white solid 5px;
+}
+
+.logo-img {
+    background-color: rgba(255, 255, 255, 0.59);
+}
+
+header h1 {
+    background-color: rgba(255, 255, 255);
+    color: #ff4c00;
+    margin-top: 200px;
+    margin-left: -5rem;
+    font-size: 4rem;
+    font-family: "Londrina Sketch", sans-serif;
+    transform: rotate(-10deg);
+    border: #ff4c00 solid 2px;
+}
