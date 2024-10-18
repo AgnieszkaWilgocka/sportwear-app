@@ -11,41 +11,47 @@ export const DUMMY_DATA = [
         title: 'Blouse',
         image: bluza,
         description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
-        size: 'M'
+        size: 'M',
+        price: "126.99"
     },
     {
         id: 'p2',
         title: 'Boots',
         image: boots,
         description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
-        size: 'S'
+        size: 'S',
+        price: '299.99'
     },
     {
         id: 'p3',
         title: 'Jacket',
         image: jacket,
         description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
-        size: 'M'
+        size: 'M',
+        price: '499.99'
     },
     {
         id: 'p4',
         title: 'Red Jacket',
         image: boots,
         description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
-        size: 'M'
+        size: 'M',
+        price: '229.99'
     },
     {
         id: 'p5',
         title: 'Street Shoes',
         image: jacket,
         description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
-        size: 'L'
+        size: 'L',
+        price: '300'
     },
     {
         id: 'p6',
         title: 'Socks',
         image: bluza,
         description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
-        size: 'XS'
+        size: 'XS',
+        price: '49.99'
     }
 ]

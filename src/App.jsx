@@ -4,11 +4,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
 import RootLayout from "./pages/RootLayout.jsx";
+import ProductsContextProvider from "./store/products-context.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout />,
+    element:
+        <RootLayout />,
+
     children: [
       {
         path: "",
@@ -16,7 +19,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/products",
-        element: <Products />
+        element:
+        <ProductsContextProvider>
+            <Products />
+        </ProductsContextProvider>
       }
     ]
   },

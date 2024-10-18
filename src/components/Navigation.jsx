@@ -8,7 +8,7 @@ export default function Navigation() {
             <ul className={styles.navigation}>
                 <li>O nas</li>
                 <li>Produkty</li>
-                {/*<li><span><FontAwesomeIcon icon={faBasketShopping}/></span>Koszyk</li>*/}
+
             </ul>
         </nav>
     )

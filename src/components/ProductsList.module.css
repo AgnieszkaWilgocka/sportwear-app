@@ -8,6 +8,29 @@
     background-color: white;
 }
 
+.basket {
+    position: relative;
+    color: #ff4c00;
+}
+
+.basket span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.basket button {
+    font-size: 1.5rem;
+    color: #ff4c00;
+    border: none;
+    background-color: transparent;
+}
+
+.basket button:hover{
+    cursor: pointer;
+}
+
+
 .container {
     margin-top: 100px;
     display: flex;
