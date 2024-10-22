@@ -1,11 +1,12 @@
 .products-h1 {
-    color: #ff4c00;
+    color: #fff;
     font-size: 4rem;
     font-family: "Londrina Sketch", sans-serif;
     text-align: center;
     width: 50%;
     margin: 0 auto;
-    background-color: white;
+    /*background-color: white;*/
+    background: linear-gradient(90deg, #ff4c00, #ff8a05);
 }
 
 .basket {
@@ -37,8 +38,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*min-height: 150vh;*/
-    /*background-color: saddlebrown;*/
     gap: 1.5rem;
 }
 
@@ -47,26 +46,29 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     background-color: #1324b1;
     color: white;
     flex-basis: 29%;
     border-radius: 4.5%;
-    border-left: #ff4c00 1px solid;
-    /*height: 70vh;*/
 }
 
 .product p,
 .product h3 {
-    padding: 0 10px;
+    padding: 10px;
 }
 .product h3 {
-    color: #ff4c00;
+    color: #fff;
     font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.product p {
+    font-size: 1rem;
 }
 .product img {
      height: 20rem;
      width: 100%;
+    border-bottom: 2px solid #ff4c00;
 }
 
  .actions {
@@ -96,6 +98,11 @@
      color: #fff;
      font-weight: normal;
  }
+
+ .products-details {
+     padding: 0 20px;
+ }
+
 
  /*.buttons {*/
  /*    padding: 20px;*/

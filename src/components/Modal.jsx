@@ -1,9 +1,9 @@
 import {createPortal} from "react-dom";
 import {useEffect, useRef} from "react";
+import styles from "./Modal.module.css";
 
 
-
-export default function Modal({open, children, onClose}) {
+export default function Modal({open, children, onClose, buttons}) {
 
 
     const dialog = useRef();
@@ -20,9 +20,11 @@ export default function Modal({open, children, onClose}) {
 
     return createPortal(
         <dialog ref={dialog} onClose={onClose}>
-            {open ? children : null}
-            <div className="actions">
-                <button onClick={onClose}>Close</button>
+            <div className={styles["dialog-content"]}>
+                {open ? children : null}
+                <div className={styles["button-dialog"]}>
+                    {buttons}
+                </div>
             </div>
         </dialog>,
 

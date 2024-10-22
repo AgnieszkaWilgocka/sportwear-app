@@ -1,4 +1,4 @@
-import styles from "./ProductsList.module.css";
+import styles from "./Products.module.css";
 import {useContext, useState} from 'react';
 import {DUMMY_DATA} from "../products.js";
 import ProductItem from "./ProductItem.jsx";
@@ -26,10 +26,19 @@ export default function ProductsList() {
         setIsOpen(false);
     }
 
-
-    return(
+    const buttons = (
         <>
-            <Modal open={isOpen} onClose={handleCloseModal}>
+            <button onClick={handleCloseModal}>Close</button>
+            {productContext.items.length > 0 && <button>Summary</button>}
+        </>
+    )
+
+
+    return (
+        <>
+            <Modal open={isOpen}
+                   onClose={handleCloseModal}
+                   buttons={buttons}>
                 <Basket />
             </Modal>
 
