@@ -1,0 +1,56 @@
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+.form-modal input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: solid 1px #c8b290;
+}
+
+.form-modal input:focus {
+    background-color: #eddacb;
+    /*border-color: #ff4c00;*/
+}
+
+.aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aside div {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside div:last-child {
+    width: 30%;
+    /*color: pink*/
+}
+
+.buttons {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button {
+        padding: 10px 15px;
+        margin-left: 10px;
+        background-color: #fff;
+        border-radius: 10%;
+        color: #ff4c00;
+        font-weight: bold;
+        font-size: 1rem;
+        border-style: none;
+        transition: .1s;
+    }
+
+.buttons button:hover {
+        background: linear-gradient(90deg, #ff4c00, #ff8a05);
+        color: #fff;
+    }

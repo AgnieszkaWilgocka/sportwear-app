@@ -3,7 +3,8 @@ import {createContext, useReducer} from "react";
 export const ProductsContext = createContext({
     items: [],
     addItem: (item) => {},
-    removeItem: (id) => {}
+    removeItem: (id) => {},
+    clearOrder: () => {}
 });
 
 
@@ -37,6 +38,10 @@ function productsReducer(state, action) {
 
         return {...state, items: updatedProducts}
     }
+
+    if(action.type === "CLEAR") {
+        return {...state, items: []}
+    }
 }
 
 export default function ProductsContextProvider({children}) {
@@ -58,10 +63,17 @@ export default function ProductsContextProvider({children}) {
         });
     }
 
+    function handleClearOrder() {
+        dispatchProductsAction({
+            type: "CLEAR"
+        })
+    }
+
     const productsContext = {
         items: products.items,
         addItem: handleAddItem,
-        removeItem: handleRemoveItem
+        removeItem: handleRemoveItem,
+        clearOrder: handleClearOrder
     }
 
     return <ProductsContext.Provider value={productsContext}> {children} </ProductsContext.Provider>

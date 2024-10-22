@@ -10,7 +10,7 @@ export const DUMMY_DATA = [
         id: 'p1',
         title: 'Blouse',
         image: bluza,
-        description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie blandit nisi, quis condimentum elit lobortis a. Morbi tempus imperdiet massa eu iaculis. Donec imperdiet laoreet nisl id laoreet. Sed quis pretium magna. Phasellus eu neque id sem volutpat egestas id in eros. Maecenas imperdiet euismod nunc, nec ultrices tellus pharetra eu. Sed sit amet augue quis odio venenatis iaculis sed quis tellus. Morbi sit amet ex purus. In hac habitasse platea dictumst.',
         size: 'M',
         price: "126.99"
     },

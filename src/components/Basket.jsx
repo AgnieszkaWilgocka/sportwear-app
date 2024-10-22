@@ -1,6 +1,7 @@
 import {useContext} from "react";
 import {ProductsContext} from "../store/products-context.jsx";
 import styles from "./Basket.module.css";
+import Button from "./Button.jsx";
 
 export default function Basket() {
 
@@ -16,15 +17,14 @@ export default function Basket() {
                     {productContext.items.map((product) => (
                         <>
                             <div className={styles.details}>
-                                <li>{product.title}</li>
-                                <li>{product.size} </li>
-                                <li>Cena</li>
+                                <li>Product: {product.title}</li>
+                                <li>Size: {product.size} </li>
+                                <li>Price: {product.price}</li>
                             </div>
                             <div className={styles["actions-details"]}>
-                                <button onClick={() => productContext.addItem(product)}>+</button>
-
+                                <Button onClick={() => productContext.addItem(product)}>+</Button>
                                 <p>{product.amount}</p>
-                                <button onClick={() => productContext.removeItem(product.id)}>-</button>
+                                <Button onClick={() => productContext.removeItem(product.id)}>-</Button>
                             </div>
                         </>
                     ))}

@@ -13,15 +13,16 @@ export default function Modal({open, children, onClose, buttons}) {
 
         if(open) {
             modal.showModal()
-        } else {
-            modal.close()
         }
+
+        return () => modal.close()
+
     }, [open]);
 
     return createPortal(
         <dialog ref={dialog} onClose={onClose}>
             <div className={styles["dialog-content"]}>
-                {open ? children : null}
+                {children}
                 <div className={styles["button-dialog"]}>
                     {buttons}
                 </div>

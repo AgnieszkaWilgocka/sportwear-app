@@ -8,6 +8,8 @@ import {faBasketShopping} from "@fortawesome/free-solid-svg-icons";
 import Modal from "./Modal.jsx";
 import Basket from "./Basket.jsx";
 import {ProductsContext} from "./../store/products-context.jsx";
+import Checkout from "./Checkout.jsx";
+import Button from "./Button.jsx";
 
 export default function ProductsList() {
 
@@ -15,37 +17,57 @@ export default function ProductsList() {
 
     const totalProductsAmount = productContext.items.reduce((total, item) => total + item.amount, 0);
 
-    const[isOpen, setIsOpen] = useState(false);
+    const [modal, setModal] = useState({
+        basket: false,
+        checkout: false
+    });
 
 
-    function handleOpenModal() {
-        setIsOpen(true);
+    function handleOpenModal(modalName) {
+        setModal((prevState) => {
+            return {
+                ...prevState,
+                [modalName]: true
+            }
+        })
     }
+
 
     function handleCloseModal() {
-        setIsOpen(false);
+        setModal({
+            basket: false,
+            checkout: false
+        })
     }
+
 
     const buttons = (
         <>
-            <button onClick={handleCloseModal}>Close</button>
-            {productContext.items.length > 0 && <button>Summary</button>}
+            <Button onClick={handleCloseModal}>Close</Button>
+            {productContext.items.length > 0 && <Button onClick={() => handleOpenModal("checkout")}>Checkout</Button>}
         </>
     )
+
+    console.log(modal);
 
 
     return (
         <>
-            <Modal open={isOpen}
+            <Modal open={modal.basket}
                    onClose={handleCloseModal}
                    buttons={buttons}>
-                <Basket />
+                <Basket showCheckout={modal} onClose={handleCloseModal}/>
+            </Modal>
+
+            <Modal open={modal.checkout} onClose={handleCloseModal}>
+                <Checkout onClose={handleCloseModal} open={modal.checkout}/>
             </Modal>
 
             <h1 className={styles["products-h1"]}>Sportswear.com</h1>
             <div className={styles.basket}>
-                <button onClick={handleOpenModal}>
-                    <span><FontAwesomeIcon style={{paddingRight: 10}} icon={faBasketShopping}/>Koszyk {totalProductsAmount}</span>
+                <button onClick={() => handleOpenModal("basket")}>
+                    <span><FontAwesomeIcon style={{paddingRight: 10}}
+                                           icon={faBasketShopping}/>{`Products ${totalProductsAmount}`}</span>
                 </button>
             </div>
 
@@ -64,7 +86,7 @@ export default function ProductsList() {
                         exit: {opacity: 1}
                     }}
                                className={styles.product} key={product.id}>
-                        <ProductItem product={product} />
+                        <ProductItem product={product}/>
                     </motion.li>
                 )
                 }

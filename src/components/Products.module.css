@@ -5,7 +5,6 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
-    /*background-color: white;*/
     background: linear-gradient(90deg, #ff4c00, #ff8a05);
 }
 
@@ -74,10 +73,8 @@
  .actions {
      display: flex;
      flex-direction: row;
-     /*width: 100%;*/
      padding: 20px;
      justify-content: flex-end;
-     /*margin-right: 70px;*/
  }
 
  .actions button {
@@ -90,7 +87,6 @@
      font-family: "Londrina Sketch", sans-serif;
      border-style: none;
      letter-spacing: 2px;
-     /*border-bottom: white 1px solid;*/
  }
 
  .actions button:hover {
@@ -103,7 +99,3 @@
      padding: 0 20px;
  }
 
-
- /*.buttons {*/
- /*    padding: 20px;*/
- /*}*/
