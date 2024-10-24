@@ -35,9 +35,6 @@
 
 .img {
     flex-basis: 49%;
-    /*height: 190px;*/
-    /*width:390px;*/
-    /*border: #fff solid 1px;*/
     background-color: aqua;
     background-size: cover;
     background-position: center;
@@ -54,10 +51,8 @@
 .img-1 {
     background-image: url("../assets/background/chuttersnap-4JHMt29fvj8-unsplash.jpg");
 }
-
 .img-2 {
     background-image: url("../assets/background/karsten-winegeart-c5lwhP9RMkA-unsplash.jpg");
-
 }
 .img-3 {
     background-image: url("../assets/background/egor-litvinov-PxOKiijNQ5M-unsplash.jpg");
@@ -66,9 +61,7 @@
     background-image: url("../assets/background/elyas-pasban-anqECSim-pc-unsplash.jpg");
 }
 .img-5 {
-
     background-image: url("../assets/background/david-gavi-HPVRnFeplbQ-unsplash.jpg");
-
 }
 .img-6 {
     background-image: url("../assets/background/ilyuza-mingazova-40ZdNQ7I5Oo-unsplash.jpg");
@@ -112,7 +105,6 @@
     margin-top: 200px;
     display: flex;
     flex-direction: row;
-
     width: 1600px;
     justify-content: center;
     border-radius: 2%;
@@ -161,4 +153,52 @@
 .button-about > button a:hover {
     color: #BBE4A8;
     transform: rotate(-10deg);
+}
+
+@media (max-width: 1200px) {
+    .background-container{
+        width: 1100px;
+    }
+
+    .about {
+        width: 1100px;
+    }
+
+    /*//// variables /// */
+    .img-about-first {
+        overflow: visible;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .background-container{
+        width: 900px;
+    }
+
+    .about {
+        width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .background-container{
+        width: 700px;
+    }
+
+    .about {
+        width: 700px;
+    }
+}
+
+@media (max-width: 576px) {
+    .background-container{
+        width: 500px;
+        height: 600px;
+    }
+
+    .about {
+        width: 500px;
+    }
+
 }

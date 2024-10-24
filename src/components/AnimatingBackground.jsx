@@ -8,15 +8,8 @@ export default function AnimatingBackground({opacity, topAnimate, leftAnimate, r
         const refTarget = useRef(null);
 
         const isInView = useInView(refTarget, {
-                amount: 'all',
+                amount: 0.5,
         });
-
-        // useEffect(() => {
-        //     console.log(`The element ${isInView ? 'is' : 'is NOT'} in view`);
-        //
-        // }, [isInView]);
-
-        ///
 
     return (
         <>
@@ -58,7 +51,7 @@ export default function AnimatingBackground({opacity, topAnimate, leftAnimate, r
                                     transition={{duration: 0.5, type: 'spring', bounce: 0.5}}
                                     src={image} alt="Image"/>
                         </motion.div>
-                        <div className={styles["button-about"]}>
+                        <motion.div className={styles["button-about"]}>
                                 <motion.button
                                     whileHover={{
                                             scale: 1.2,
@@ -70,7 +63,7 @@ export default function AnimatingBackground({opacity, topAnimate, leftAnimate, r
                                         <Link to="/products">Check it out</Link>
                                         {/*Check it out*/}
                                 </motion.button>
-                        </div>
+                        </motion.div>
                 </div>
         </>
     )

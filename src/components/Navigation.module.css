@@ -16,11 +16,30 @@ nav {
     padding: 10px;
     font-size: 20px;
     font-family: "Inconsolata", monospace;
-    color: white;
+}
 
+.navigation li a {
+    text-decoration: none;
+    color: white;
 }
 
 .navigation li:last-child {
     border-left: #ff4c00 solid 1px;
+
+}
+.navigation li:last-child a {
     color: #ff4c00;
+}
+
+.active {
+    font-weight: bold;
+    /*transform: scale(1);*/
+    transition: .1s;
+    border-bottom: #ff8a05 1px solid;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: static;
+    }
 }

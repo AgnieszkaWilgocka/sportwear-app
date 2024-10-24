@@ -10,7 +10,7 @@ export const DUMMY_DATA = [
         id: 'p1',
         title: 'Blouse',
         image: bluza,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie blandit nisi, quis condimentum elit lobortis a. Morbi tempus imperdiet massa eu iaculis. Donec imperdiet laoreet nisl id laoreet. Sed quis pretium magna. Phasellus eu neque id sem volutpat egestas id in eros. Maecenas imperdiet euismod nunc, nec ultrices tellus pharetra eu. Sed sit amet augue quis odio venenatis iaculis sed quis tellus. Morbi sit amet ex purus. In hac habitasse platea dictumst.',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra eros et finibus egestas. Ut a varius orci, sit amet convallis massa. Maecenas vitae nisi sed dolor tincidunt consequat ac nec magna.',
         size: 'M',
         price: "126.99"
     },
@@ -18,7 +18,7 @@ export const DUMMY_DATA = [
         id: 'p2',
         title: 'Boots',
         image: boots,
-        description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
+        description: ' Phasellus sagittis nulla vitae mi vestibulum, sed tempus tellus iaculis. Vestibulum quis augue ultrices, accumsan libero nec, ultrices turpis.',
         size: 'S',
         price: '299.99'
     },
@@ -26,7 +26,7 @@ export const DUMMY_DATA = [
         id: 'p3',
         title: 'Jacket',
         image: jacket,
-        description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
+        description: 'Etiam viverra eros et finibus egestas. Ut a varius orci, sit amet convallis massa. Maecenas vitae nisi sed dolor tincidunt consequat ac nec magna.',
         size: 'M',
         price: '499.99'
     },
@@ -34,7 +34,7 @@ export const DUMMY_DATA = [
         id: 'p4',
         title: 'Red Jacket',
         image: boots,
-        description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
+        description: 'Etiam viverra eros et finibus egestas. Ut a varius orci, sit amet convallis massa. Maecenas vitae nisi sed dolor tincidunt consequat ac nec magna. Vestibulum quis augue ultrices, accumsan libero nec, ultrices turpis.',
         size: 'M',
         price: '229.99'
     },
@@ -42,7 +42,7 @@ export const DUMMY_DATA = [
         id: 'p5',
         title: 'Street Shoes',
         image: jacket,
-        description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
+        description: 'Nullam nunc sapien, ullamcorper nec velit lacinia, aliquam porttitor dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
         size: 'L',
         price: '300'
     },
@@ -50,7 +50,7 @@ export const DUMMY_DATA = [
         id: 'p6',
         title: 'Socks',
         image: bluza,
-        description: 'cool blouse cool blousecool blousecool blousecool blousecool blousecool blousecool blouse',
+        description: 'Maecenas pellentesque eros vitae sagittis egestas. Morbi ac placerat justo. Donec tincidunt arcu vitae risus fermentum dapibus. Pellentesque pharetra elit elit, ut luctus nibh suscipit eu. Ut nec iaculis nibh.',
         size: 'XS',
         price: '49.99'
     }

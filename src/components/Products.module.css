@@ -38,6 +38,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.5rem;
+    padding: 0;
 }
 
 .product {
@@ -51,10 +52,6 @@
     border-radius: 4.5%;
 }
 
-.product p,
-.product h3 {
-    padding: 10px;
-}
 .product h3 {
     color: #fff;
     font-size: 1.5rem;
@@ -62,8 +59,9 @@
 }
 
 .product p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
+
 .product img {
      height: 20rem;
      width: 100%;
@@ -89,13 +87,149 @@
      letter-spacing: 2px;
  }
 
+.products-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+    padding: 0 20px;
+}
+
+ @media (min-width: 1080px) {
  .actions button:hover {
      background: linear-gradient(90deg, #ff4c00, #ff8a05);
      color: #fff;
      font-weight: normal;
  }
+}
 
- .products-details {
-     padding: 0 20px;
+@media (max-width: 1200px) {
+    .product {
+        flex-basis: 43%;
+    }
+}
+
+ @media (max-width: 992px) {
+     .products-h1 {
+         font-size: 3rem;
+     }
+
+     .basket button {
+         font-size: 1.2rem;
+     }
+
+
+     .product h3 {
+         color: #fff;
+         font-size: 1.1rem;
+         letter-spacing: 1px;
+     }
+
+     .product p {
+         font-size: 0.9rem;
+     }
+
+     .product img {
+         height: 15rem;
+     }
+
+     .actions {
+         padding: 10px;
+     }
+
+     .actions button {
+         padding: 10px 30px;
+         font-size: 1.2rem;
+     }
  }
 
+@media (max-width: 768px) {
+    .basket span {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .basket button {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .product {
+        width: 60%;
+
+    }
+
+    .product img {
+        width: 100%;
+        height: 18rem;
+
+    }
+
+    .products-details {
+        height: 35vh;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .basket span {
+        top: 2rem;
+        right: 1rem;
+    }
+
+    .products-h1 {
+        font-size: 2.5rem;
+    }
+
+    .basket button {
+        font-size: 1rem;
+    }
+
+    .container {
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .product {
+        width: 65%;
+    }
+
+    .product h3 {
+        font-size: 1rem;
+    }
+
+    .product p {
+        font-size: 0.8rem;
+    }
+
+    .product img {
+        height: 12rem;
+    }
+
+    .products-details {
+        height: 30vh;
+
+    }
+
+    .actions {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .actions button {
+        width: 100%;
+        padding: 10px 40px;
+        background: linear-gradient(90deg, #ff4c00, #ff8a05);
+        border-radius: 0;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+}

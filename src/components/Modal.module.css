@@ -5,6 +5,10 @@ dialog {
     border-color: rgba(90, 66, 74, 0.73);
 }
 
+dialog::backdrop {
+    background-color: rgba(73, 73, 74, 0.54);
+}
+
 .dialog-content {
     padding: 20px;
 }
@@ -12,6 +16,8 @@ dialog {
 .dialog-content h3 {
     font-size: 1.5rem;
 }
+
+
 
 .button-dialog {
     display: flex;
@@ -30,7 +36,29 @@ dialog {
     transition: .1s;
 }
 
-.button-dialog button:hover {
-    background: linear-gradient(90deg, #ff4c00, #ff8a05);
-    color: #fff;
+@media (min-width: 1200px) {
+    .button-dialog button:hover {
+        background: linear-gradient(90deg, #ff4c00, #ff8a05);
+        color: #fff;
+    }
+}
+
+@media (max-width: 576px) {
+    .dialog-content {
+        padding: 10px;
+    }
+
+    .dialog-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .button-dialog button {
+        padding: 10px 15px;
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    .dialog-content p {
+        font-size: 0.9rem;
+    }
 }

@@ -33,7 +33,6 @@
     width: 30px;
     height: 30px;
     line-height: 30px;
-    /*padding: 10px;*/
     text-align: center;
 }
 
@@ -41,7 +40,6 @@
     border-radius: 50%;
     background-color: #c8b290;
     color: #4a4949;
-    /*font-weight: bold;*/
     font-size: 1rem;
     border: 1px solid rgba(90, 66, 74, 0.73);
 }
@@ -50,4 +48,16 @@
     width: 100%;
     text-align: left;
     font-weight: bold;
+}
+
+@media(max-width: 576px) {
+    .products-dialog li {
+        font-size: 0.9rem;
+    }
+
+    .actions-details button {
+        border-radius: 0;
+        font-size: 0.8rem;
+
+    }
 }

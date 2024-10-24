@@ -13,7 +13,6 @@
 
 .form-modal input:focus {
     background-color: #eddacb;
-    /*border-color: #ff4c00;*/
 }
 
 .aside {
@@ -29,7 +28,6 @@
 
 .aside div:last-child {
     width: 30%;
-    /*color: pink*/
 }
 
 .buttons {
@@ -48,9 +46,26 @@
         font-size: 1rem;
         border-style: none;
         transition: .1s;
-    }
+}
 
 .buttons button:hover {
         background: linear-gradient(90deg, #ff4c00, #ff8a05);
         color: #fff;
+}
+
+@media(max-width: 576px) {
+
+    .form-modal input {
+        padding: 5px;
+        font-size: 0.8rem;
     }
+
+    .form-modal label {
+        padding: 5px 0;
+    }
+
+    .buttons button {
+        font-size: 0.8rem;
+
+    }
+}
