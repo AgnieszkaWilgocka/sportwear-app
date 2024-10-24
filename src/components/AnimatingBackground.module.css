@@ -1,4 +1,12 @@
 
+:root {
+    --x-left-start: -70%;
+    --x-move-percentage: 150%;
+    --button-start: 0; /*pozniej na -100px */
+    --button-move-percentage: -50%;
+}
+
+
 .background-container{
     overflow: hidden;
     position: absolute;
@@ -123,8 +131,9 @@
 .img-about-first img {
     position: absolute;
     top: 0;
-    left: -70%;
-
+    left: var(--x-left-start);
+    /*right: 0;*/
+    /*left: -70%;*/
 }
 
 .button-about {
@@ -134,6 +143,7 @@
 }
 
 .button-about > button {
+    margin-left: var(--button-start);
     font-family: "Londrina Sketch", sans-serif;
     font-size: 3rem;
     padding: 10px 0;
@@ -144,18 +154,24 @@
     background: linear-gradient(to bottom right, rgb(13, 28, 142), rgba(15, 2, 200))
 }
 
-
 .button-about a {
     color: #ff4c00;
     padding: 20px 35px;
 }
 
-.button-about > button a:hover {
-    color: #BBE4A8;
-    transform: rotate(-10deg);
+
+@media(min-width: 992px) {
+    .button-about > button a:hover {
+        color: #BBE4A8;
+    }
 }
 
 @media (max-width: 1200px) {
+    :root {
+        --x-left-start: -92%;
+        --button-move-percentage: -40%;
+        --x-move-percentage: 120%;
+    }
     .background-container{
         width: 1100px;
     }
@@ -172,6 +188,12 @@
 }
 
 @media (max-width: 992px) {
+    :root {
+        --x-left-start: -110%;
+        --x-move-percentage: 100%;
+        --button-move-percentage: -30%;
+    }
+
     .background-container{
         width: 900px;
     }
@@ -182,6 +204,10 @@
 }
 
 @media (max-width: 768px) {
+    :root {
+        --x-left-start: -130%;
+        --button-move-percentage: -30%;
+    }
     .background-container{
         width: 700px;
     }
@@ -189,16 +215,60 @@
     .about {
         width: 700px;
     }
+
+    .img-about-first {
+        height: 450px;
+        flex-basis: 35%;
+    }
+
+    .button-about {
+        height: 450px;
+        line-height: 450px;
+        flex-basis: 35%;
+    }
+
+    .img-about-first img {
+        width: 300px;
+    }
+
+    .button-about > button {
+        font-size: 2.3rem;
+    }
+
+    .button-about a {
+        color: #BBE4A8;
+    }
 }
 
 @media (max-width: 576px) {
+    :root {
+        --x-left-start: -150%;
+        --button-move-percentage: -30%;
+    }
     .background-container{
         width: 500px;
         height: 600px;
     }
 
     .about {
+        margin-top: 0;
         width: 500px;
     }
 
+    .img-about-first {
+        height: 400px;
+    }
+
+    .img-about-first img {
+        width: 250px;
+    }
+
+    .button-about > button {
+        font-size: 1.4rem;
+    }
+
+    .button-about {
+        height: 400px;
+        line-height: 400px;
+    }
 }
