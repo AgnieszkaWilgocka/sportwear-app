@@ -185,7 +185,9 @@
     }
 
     .products-h1 {
-        font-size: 2.5rem;
+        margin-top: 80px;
+        font-size: 2.7rem;
+        width: 60%;
     }
 
     .basket button {

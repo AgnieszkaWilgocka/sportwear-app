@@ -17,8 +17,6 @@ dialog::backdrop {
     font-size: 1.5rem;
 }
 
-
-
 .button-dialog {
     display: flex;
     justify-content: flex-end;

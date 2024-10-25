@@ -33,13 +33,72 @@ nav {
 
 .active {
     font-weight: bold;
-    /*transform: scale(1);*/
     transition: .1s;
     border-bottom: #ff8a05 1px solid;
+}
+
+.button-menu {
+    display: none;
 }
 
 @media (max-width: 768px) {
     nav {
         position: static;
+    }
+}
+
+@media(max-width: 576px) {
+    nav {
+        position: relative;
+        height: 60px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .large-devices {
+        display: none
+    }
+
+    .active-menu {
+        transform-origin: top;
+    }
+
+
+    .navigation li {
+        width: 70px;
+        text-align:left;
+    }
+
+    .navigation li:last-child {
+        border-left: none;
+    }
+
+    .navigation li:last-child a {
+        color: #fff;
+    }
+
+    .button-menu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        background-color: transparent;
+        border: none;
+        color: #ff4c00;
+        /*padding: 2rem;*/
+        font-size: 2rem;
+        transition: .2s;
+    }
+
+    .button {
+        padding: 20px;
+    }
+
+    .active-icon {
+        transform: rotate(90deg);
     }
 }

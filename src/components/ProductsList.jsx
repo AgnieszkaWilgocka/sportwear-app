@@ -67,13 +67,14 @@ export default function ProductsList() {
             <div className={styles.basket}>
                 <button onClick={() => handleOpenModal("basket")}>
                     <span><FontAwesomeIcon style={{paddingRight: 10}}
-                                           icon={faBasketShopping}/>{`Products ${totalProductsAmount}`}</span>
+                                           icon={faBasketShopping}/>
+                        {`Products ${totalProductsAmount}`}</span>
                 </button>
             </div>
 
 
             <motion.ul variants={{
-                show: {transition: {staggerChildren: 0.1,}}
+                show: {transition: {staggerChildren: 0.1}}
 
             }}
                        initial="hidden"

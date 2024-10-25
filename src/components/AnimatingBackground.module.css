@@ -2,7 +2,7 @@
 :root {
     --x-left-start: -70%;
     --x-move-percentage: 150%;
-    --button-start: 0; /*pozniej na -100px */
+    --button-start: 0;
     --button-move-percentage: -50%;
 }
 
@@ -15,7 +15,6 @@
     width: 1600px;
     height: 800px;
     margin: 0 auto;
-    /*background-color: #BBE4A8;*/
     background: linear-gradient(to bottom left, rgb(0, 0, 0), rgba(15, 2, 200));
 }
 
@@ -125,15 +124,12 @@
     height: 612px;
     flex-basis: 40%;
     background-repeat: no-repeat;
-
 }
 
 .img-about-first img {
     position: absolute;
     top: 0;
     left: var(--x-left-start);
-    /*right: 0;*/
-    /*left: -70%;*/
 }
 
 .button-about {
@@ -179,8 +175,6 @@
     .about {
         width: 1100px;
     }
-
-    /*//// variables /// */
     .img-about-first {
         overflow: visible;
     }
@@ -251,7 +245,6 @@
     }
 
     .about {
-        /*margin-top: 0;*/
         width: 500px;
     }
 
