@@ -11,11 +11,6 @@ export default function AnimatingBackground({opacity, topAnimate, leftAnimate, r
                 amount: 0.5,
         });
 
-        // const variants = {
-        //     start: {
-        //         x: var("--x-right-start"),
-        //     }
-        // }
     return (
         <>
             <motion.div style={{opacity}} className={styles["background-container"]}>
@@ -48,18 +43,10 @@ export default function AnimatingBackground({opacity, topAnimate, leftAnimate, r
             </motion.div>
 
                 <div className={styles.about}>
-                        <motion.div ref={refTarget} className={styles["img-about-first"]}
-                        //     variants={{
-                        //     start: {
-                        //         x: "var(--x-right-start)"
-                        //     }
-                        // }}
-                        >
+                        <motion.div ref={refTarget} className={styles["img-about-first"]}>
                                 <motion.img
                                     animate={{
                                         x: isInView ? "var(--x-move-percentage)" : "0%"
-
-                                            // x: isInView ? "15%" : "0%"
                                     }}
                                     transition={{duration: 0.5, type: 'spring', bounce: 0.5}}
                                     src={image} alt="Image"/>
@@ -75,7 +62,6 @@ export default function AnimatingBackground({opacity, topAnimate, leftAnimate, r
                                     transition={{duration: 1.2, type: 'spring', bounce: 0.5}}
                                 >
                                         <Link to="/products">Check it out</Link>
-                                        {/*Check it out*/}
                                 </motion.button>
                         </motion.div>
                 </div>

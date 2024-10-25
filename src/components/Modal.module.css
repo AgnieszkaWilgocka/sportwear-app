@@ -6,7 +6,7 @@ dialog {
 }
 
 dialog::backdrop {
-    background-color: rgba(73, 73, 74, 0.54);
+    background-color: rgba(0, 0, 0, 0.38);
 }
 
 .dialog-content {

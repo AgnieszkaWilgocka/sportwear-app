@@ -9,6 +9,8 @@ export default function MainPage() {
     const{scrollY} = useScroll();
 
     const scrollH1 = useTransform(scrollY, [0, 400], [0, 500]);
+    const scrollH1SmallDevice = useTransform(scrollY, [0, 400], [0, 400]);
+
     const opacityH1 = useTransform(scrollY, [0, 400], [1, 0]);
     const opacityBackground = useTransform(scrollY, [0, 400, 400, 500], [1, 0.2, 0.2, 0.1]);
     const scrollImg = useTransform(scrollY, [0, 400], [0, -300]);
@@ -20,15 +22,20 @@ export default function MainPage() {
     const downAnimate = useTransform(scrollY, [0, 100, 200], [0, 200, 400]);
 
 
-
     return(
         <>
-            <Header scrollImg={scrollImg} scrollH1={scrollH1} rotate={rotateH1} opacity={opacityH1}/>
+            <Header scrollImg={scrollImg}
+                    scrollH1={scrollH1}
+                    rotate={rotateH1}
+                    opacity={opacityH1}
+                    scrollH1SmallDevice={scrollH1SmallDevice}
+            />
             <AnimatingBackground opacity={opacityBackground}
                                  topAnimate={topAnimate}
                                  leftAnimate={leftAnimate}
                                  rightAnimate={rightAnimate}
-                                 downAnimate={downAnimate}/>
+                                 downAnimate={downAnimate}
+            />
             <footer>
                 <p>All right reserved</p>
             </footer>

@@ -5,16 +5,19 @@ header {
     align-items: center;
 }
 
-.logo{
+.logo-img {
     width: 400px;
+    background-color: rgba(255, 255, 255, 0.59);
     border-right: white solid 5px;
     border-left: white solid 5px;
     border-top: white solid 5px;
 }
 
-.logo-img {
-    background-color: rgba(255, 255, 255, 0.59);
+.logo{
+    width: 100%;
+    height: 100%;
 }
+
 
 header h1 {
     background-color: rgba(255, 255, 255);
@@ -23,6 +26,42 @@ header h1 {
     margin-left: -5rem;
     font-size: 4rem;
     font-family: "Londrina Sketch", sans-serif;
-    transform: rotate(-10deg);
+    /*transform: rotate(-10deg);*/
     border: #ff4c00 solid 2px;
+}
+
+.small-device {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        width: 350px;
+    }
+}
+
+
+@media(max-width: 578px) {
+    .logo-img,
+    header h1
+    {
+        display: none
+    }
+
+    .small-device {
+        display: inline-block;
+    }
+
+    .text {
+        height: 350px;
+        /*line-height: 350px;*/
+    }
+
+    header h1 {
+        /*height: 20px;*/
+        margin-top: 175px;
+        margin-left: 0;
+        font-size: 3rem;
+
+    }
 }
