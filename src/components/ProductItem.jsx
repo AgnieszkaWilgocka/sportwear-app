@@ -12,19 +12,14 @@ export default function ProductItem({product}) {
             <img src={product.image} alt=""/>
             <div className={styles["products-details"]}>
                 <h3>{product.title}</h3>
-
                 <p><span style={{fontWeight: "bold"}}>Description: </span>{product.description}</p>
                 <p><span style={{fontWeight: "bold"}}>Size: </span>{product.size}</p>
                 <p><span style={{fontWeight: "bold"}}>Price: </span>{product.price}</p>
-                {/*<div className={styles.actions}>*/}
-                {/*    <motion.button whileHover={{ scale: 1.1 }} onClick={() => productContext.addItem(product)}>Add</motion.button>*/}
-                {/*</div>*/}
             </div>
             <div className={styles.actions}>
                 <motion.button whileHover={{scale: 1.1}} onClick={() => productContext.addItem(product)}>Add
                 </motion.button>
             </div>
         </>
-        // </div>
     )
 }

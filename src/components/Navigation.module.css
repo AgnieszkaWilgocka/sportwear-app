@@ -67,7 +67,6 @@ nav {
         transform-origin: top;
     }
 
-
     .navigation li {
         width: 70px;
         text-align:left;
@@ -89,7 +88,6 @@ nav {
         background-color: transparent;
         border: none;
         color: #ff4c00;
-        /*padding: 2rem;*/
         font-size: 2rem;
         transition: .2s;
     }

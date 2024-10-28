@@ -26,7 +26,6 @@ header h1 {
     margin-left: -5rem;
     font-size: 4rem;
     font-family: "Londrina Sketch", sans-serif;
-    /*transform: rotate(-10deg);*/
     border: #ff4c00 solid 2px;
 }
 
@@ -54,11 +53,9 @@ header h1 {
 
     .text {
         height: 350px;
-        /*line-height: 350px;*/
     }
 
     header h1 {
-        /*height: 20px;*/
         margin-top: 175px;
         margin-left: 0;
         font-size: 3rem;

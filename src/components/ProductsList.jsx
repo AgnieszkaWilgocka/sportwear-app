@@ -46,10 +46,7 @@ export default function ProductsList() {
             <Button onClick={handleCloseModal}>Close</Button>
             {productContext.items.length > 0 && <Button onClick={() => handleOpenModal("checkout")}>Checkout</Button>}
         </>
-    )
-
-    console.log(modal);
-
+    );
 
     return (
         <>
@@ -72,7 +69,6 @@ export default function ProductsList() {
                 </button>
             </div>
 
-
             <motion.ul variants={{
                 show: {transition: {staggerChildren: 0.1}}
 
@@ -93,5 +89,5 @@ export default function ProductsList() {
                 }
             </motion.ul>
         </>
-    )
+    );
 }
