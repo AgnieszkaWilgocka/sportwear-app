@@ -32,7 +32,6 @@ export default function Navigation() {
 
     const[isActive, setIsActive] = useState(false);
 
-    console.log(isActive);
     function handleActiveClass() {
         setIsActive(prevActive => !prevActive);
     }

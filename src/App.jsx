@@ -1,12 +1,12 @@
 
 import './App.css'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, createHashRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
 import RootLayout from "./pages/RootLayout.jsx";
 import ProductsContextProvider from "./store/products-context.jsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element:
