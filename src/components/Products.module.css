@@ -32,7 +32,6 @@
 
 .search-input span {
     padding: 10px;
-    /*font-size: 2rem;*/
 }
 
 .search-input input {
@@ -51,11 +50,8 @@ input::placeholder {
 
 .search-input input:focus {
     background-color: #323fc6;
-    /*border-style: none;*/
     color: #fff;
-
 }
-
 
 .container {
     margin-top: 100px;
@@ -63,7 +59,7 @@ input::placeholder {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 3rem;
     padding: 0;
 }
 
@@ -80,6 +76,7 @@ input::placeholder {
     color: white;
     flex-basis: 29%;
     border-radius: 4.5%;
+
 }
 
 .product h3 {
@@ -125,6 +122,13 @@ input::placeholder {
     justify-content: space-between;
     height: 40vh;
     padding: 0 20px;
+}
+
+.text-back {
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
  @media (min-width: 1080px) {

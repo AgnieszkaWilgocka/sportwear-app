@@ -62,8 +62,6 @@ export default function ProductsList() {
         setProducts(filtered);
     }
 
-    console.log(searchingTerm);
-
     const buttons = (
         <>
             <Button onClick={handleCloseModal}>Close</Button>
@@ -97,26 +95,34 @@ export default function ProductsList() {
                 <input onChange={(event) => handleInputChange(event.target.value)} value={searchingTerm} type="text" name="search" placeholder="Search"/>
             </div>
 
-            <motion.ul variants={{
-                show: {transition: {staggerChildren: 0.1}}
+            {products.length > 0
+                ?
+                <motion.ul
+                    variants={{
+                        show: {transition: {staggerChildren: 0.1}}
+                }}
+                    initial="hidden"
+                    animate="show"
+                    className={styles.container}>
 
-            }}
-                       initial="hidden"
-                       animate="show"
-                       className={styles.container}>
-                {products.map((product) =>
-                    <motion.li variants={{
-                        hidden: {opacity: 0},
-                        show: {opacity: 1},
-                        exit: {opacity: 1}
-                    }}
-                               className={styles.product} key={product.id}>
-
-                        <ProductItem product={product}/>
-                    </motion.li>
+                    {products.map((product) =>
+                        <motion.li variants={{
+                            hidden: {opacity: 0},
+                            show: {opacity: 1},
+                            exit: {opacity: 1}
+                        }}
+                                   className={styles.product} key={product.id}>
+                            <ProductItem product={product}/>
+                        </motion.li>
                 )
                 }
             </motion.ul>
+            :
+            <p className={styles["text-back"]}>
+                Cannot find searching product.
+            </p>
+            }
+
         </>
     );
 }
